@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Resume - Warit Klomklin</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --bg-color: #f8fafc;
+            --card-bg: #ffffff;
+            --text-main: #0f172a;
+            --text-muted: #64748b;
+            --primary: #2563eb;
+            --border-color: #e2e8f0;
+            --tag-bg: #f1f5f9;
+        }
+
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: var(--bg-color);
+            color: var(--text-main);
+            line-height: 1.6;
+            padding: 40px 20px;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            background: var(--card-bg);
+            padding: 48px;
+            border-radius: 16px;
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.04);
+            border: 1px solid var(--border-color);
+        }
+
+        header {
+            border-bottom: 2px solid var(--border-color);
+            padding-bottom: 24px;
+            margin-bottom: 32px;
+        }
+
+        h1 {
+            font-size: 2.2rem;
+            font-weight: 700;
+            color: var(--text-main);
+            margin-bottom: 6px;
+            letter-spacing: -0.5px;
+        }
+
+        .location {
+            color: var(--text-muted);
+            font-size: 0.95rem;
+            display: flex;
+            align-items: center;
+            gap: 6px;
+        }
+
+        section {
+            margin-bottom: 32px;
+        }
+
+        h2 {
+            font-size: 1.1rem;
+            font-weight: 600;
+            color: var(--primary);
+            text-transform: uppercase;
+            letter-spacing: 0.8px;
+            margin-bottom: 16px;
+        }
+
+        p.statement {
+            color: #334155;
+            font-size: 1rem;
+            line-height: 1.7;
+        }
+
+        .timeline-item {
+            margin-bottom: 20px;
+        }
+
+        .timeline-item:last-child {
+            margin-bottom: 0;
+        }
+
+        .item-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: baseline;
+            flex-wrap: wrap;
+            margin-bottom: 4px;
+        }
+
+        .item-title {
+            font-weight: 600;
+            font-size: 1.05rem;
+            color: var(--text-main);
+        }
+
+        .item-date {
+            font-size: 0.85rem;
+            color: var(--text-muted);
+            font-weight: 500;
+        }
+
+        .item-desc {
+            color: var(--text-muted);
+            font-size: 0.95rem;
+            margin-top: 4px;
+            line-height: 1.6;
+        }
+
+        .skills-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+            gap: 16px;
+        }
+
+        .skill-card {
+            background: var(--tag-bg);
+            padding: 16px;
+            border-radius: 8px;
+        }
+
+        .skill-card h3 {
+            font-size: 0.9rem;
+            font-weight: 600;
+            margin-bottom: 8px;
+            color: var(--text-main);
+        }
+
+        .skill-tags {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 6px;
+        }
+
+        .tag {
+            background: #ffffff;
+            border: 1px solid var(--border-color);
+            padding: 4px 10px;
+            border-radius: 20px;
+            font-size: 0.8rem;
+            color: #475569;
+        }
+
+        .interest-list {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+        }
+
+        .interest-item {
+            background: var(--tag-bg);
+            padding: 8px 16px;
+            border-radius: 8px;
+            font-size: 0.9rem;
+            color: var(--text-main);
+        }
+
+        @media (max-width: 600px) {
+            .container {
+                padding: 24px;
+            }
+            .item-header {
+                flex-direction: column;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <!-- Name & Address -->
+        <header>
+            <h1>Warit Klomklin</h1>
+            <div class="location">
+                <span>📍</span> Bangkok, Thailand
+            </div>
+        </header>
+
+        <!-- Profile Statement -->
+        <section>
+            <h2>Profile Statement</h2>
+            <p class="statement">
+                A Communication Arts student passionate about video production and multimedia storytelling. Proficient in videography, audio recording and mixing, as well as creative video editing and motion graphics. Equipped with strong leadership, strategic planning, and project coordination skills, with an eagerness to learn and craft high-quality media that inspires audiences.
+            </p>
+        </section>
+
+        <!-- Education -->
+        <section>
+            <h2>Education</h2>
+            <div class="timeline-item">
+                <div class="item-header">
+                    <span class="item-title">University of the Thai Chamber of Commerce (UTCC)</span>
+                    <span class="item-date">2024 – Present</span>
+                </div>
+                <div class="item-desc">Bachelor of Communication Arts</div>
+            </div>
+            <div class="timeline-item">
+                <div class="item-header">
+                    <span class="item-title">High School</span>
+                    <span class="item-date">2021 – 2023</span>
+                </div>
+                <div class="item-desc">Former President of the Student Council (Grade 11 / M.5)</div>
+            </div>
+        </section>
+
+        <!-- Work Experience & Activities -->
+        <section>
+            <h2>Work Experience & Activities</h2>
+            <div class="timeline-item">
+                <div class="item-header">
+                    <span class="item-title">Production Crew | "Zero to Hero" Podcast Project</span>
+                    <span class="item-date">May 2026</span>
+                </div>
+                <div class="item-desc">
+                    Supervised videography, field audio recording, and post-production video editing for an inspirational podcast series funded by the Thai Media Fund.
+                </div>
+            </div>
+            <div class="timeline-item">
+                <div class="item-header">
+                    <span class="item-title">System & Operations Coordinator | Studio Daddy Club</span>
+                    <span class="item-date">2026</span>
+                </div>
+                <div class="item-desc">
+                    Managed registration systems and backend operations for club fair exhibitions and collaborative orientation activities.
+                </div>
+            </div>
+        </section>
+
+        <!-- Skills -->
+        <section>
+            <h2>Skills</h2>
+            <div class="skills-grid">
+                <div class="skill-card">
+                    <h3>Technical Skills</h3>
+                    <div class="skill-tags">
+                        <span class="tag">Videography</span>
+                        <span class="tag">Video Editing</span>
+                        <span class="tag">Audio Mixing</span>
+                        <span class="tag">Noise Reduction</span>
+                        <span class="tag">Speed Ramping</span>
+                        <span class="tag">3D Camera Tracking</span>
+                    </div>
+                </div>
+                <div class="skill-card">
+                    <h3>Software</h3>
+                    <div class="skill-tags">
+                        <span class="tag">Adobe Premiere Pro</span>
+                        <span class="tag">Adobe After Effects</span>
+                        <span class="tag">Adobe Audition</span>
+                        <span class="tag">CapCut (macOS)</span>
+                    </div>
+                </div>
+                <div class="skill-card">
+                    <h3>Soft Skills</h3>
+                    <div class="skill-tags">
+                        <span class="tag">Leadership</span>
+                        <span class="tag">Strategic Planning</span>
+                        <span class="tag">Team Collaboration</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Interests / Hobbies -->
+        <section>
+            <h2>Interests & Hobbies</h2>
+            <div class="interest-list">
+                <div class="interest-item">💡 Entrepreneurship & Business Development</div>
+                <div class="interest-item">📖 Reading Physical Books</div>
+                <div class="interest-item">♟️ Chess</div>
+            </div>
+        </section>
+    </div>
+
+</body>
+</html>
